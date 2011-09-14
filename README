@@ -1,0 +1,10 @@
+Syncs multiple media center databases.
+
+Supported sources:
+Boxee
+XBMC
+
+Supported targets:
+iTunes
+
+(More to come)
