@@ -65,7 +65,8 @@ def mark_xbmc_watched(loc, filename, since):
             
 def main():
     c = ConfigParser.ConfigParser()
-    c.read(os.path.expanduser('~/.tvsync'))
+    os.system('mkdir -p ' + os.path.expanduser('~/.tvsync.d/'))
+    c.read(os.path.expanduser('~/.tvsync.d/players'))
 
     period = datetime.datetime.now() - datetime.timedelta(days = 30)
     since = time.mktime(period.timetuple())
